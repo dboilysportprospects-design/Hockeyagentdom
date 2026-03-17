@@ -12,24 +12,27 @@ const SkaterIcon = ({ size = 48, className = "" }) => (
     strokeLinejoin="round" 
     className={className}
   >
-    {/* Helmet Dome */}
-    <path d="M12 4C7.5 4 4.5 7.5 4.5 12" />
-    <path d="M19.5 12C19.5 7.5 16.5 4 12 4" />
+    {/* Helmet Main Dome */}
+    <path d="M12 3c-4.5 0-8 3-8 7.5v2.5c0 1 1 2 2 2h2" />
+    <path d="M20 10.5C20 6 16.5 3 12 3" />
     
-    {/* Visor Half-Shield */}
-    <path d="M4.5 12c3-1.5 8-1.5 12 0 1 1.5 1.5 3 1.5 4" style={{ opacity: 0.6 }} />
+    {/* Helmet Ridges */}
+    <path d="M10 3v4" />
+    <path d="M14 3v4" />
     
-    {/* Helmet Side/Ear Guard */}
-    <path d="M5 12v3c0 2 1.5 3 3 3h1" />
-    <path d="M17 12v1" />
-    <circle cx="16" cy="14" r="2" />
+    {/* Ear Piece & Side details */}
+    <circle cx="16" cy="13" r="1.5" />
+    <path d="M18 10v4" />
+    <path d="M15 15h3c1 0 2-1 2-2v-2" />
+    
+    {/* Visor */}
+    <path 
+      d="M4 10.5C5.5 9 10 8.5 12 10.5c1.5 1.5 1.5 3.5 1.5 3.5H9" 
+      style={{ opacity: 0.6 }} 
+    />
     
     {/* Chin Strap */}
-    <path d="M9 18c1.5 2 4.5 2 6 0" />
-
-    {/* Helmet Ridges */}
-    <path d="M9 5c1 1 5 1 6 0" />
-    <path d="M12 4v4" />
+    <path d="M8 15v1c0 1.5 2 2.5 4 2.5s4-1 4-2.5v-1" />
   </svg>
 );
 
@@ -75,6 +78,12 @@ const SkaterSection = () => {
               <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}><span style={{ color: 'var(--color-accent)' }}>•</span> Compete Level</li>
             </ul>
           </div>
+        </div>
+
+        <div style={{ marginTop: '2rem' }}>
+          <a href="#intake-funnel" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.125rem' }}>
+            Get Evaluated Now
+          </a>
         </div>
       </div>
     </section>

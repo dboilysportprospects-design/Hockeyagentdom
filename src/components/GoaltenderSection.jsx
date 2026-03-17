@@ -90,7 +90,11 @@ const GoaltenderSection = () => {
           </div>
         </div>
 
-
+        <div style={{ marginTop: '2rem' }}>
+          <a href="#intake-funnel" className="btn btn-primary" style={{ padding: '1rem 2.5rem', fontSize: '1.125rem' }}>
+            Get Evaluated Now
+          </a>
+        </div>
       </div>
     </section>
   );
