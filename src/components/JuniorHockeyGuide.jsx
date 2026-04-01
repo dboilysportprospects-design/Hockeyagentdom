@@ -14,14 +14,14 @@ const JuniorHockeyGuide = () => {
                     <p className="hero-subtitle">As a hockey agent with over a decade of industry experience, having assisted more than 100 players in securing Division I scholarships and professional contracts, this guide is designed to help athletes and families navigate the junior hockey landscape with a clear understanding of how the process truly works.</p>
                     
                     <div className="cta-buttons" style={{ marginTop: '40px', display: 'flex', justifyContent: 'flex-start' }}>
-                        <a href="https://buy.stripe.com/test_9B6aEY4OY4UEglR2Kj5sA01" className="btn btn-primary btn-large" style={{ backgroundColor: '#f97316', color: '#fff', textDecoration: 'none' }}>
+                        <a href="https://buy.stripe.com/7sY9AUdlu86Q3z55Wv5sA1m" className="btn btn-primary btn-large" style={{ backgroundColor: '#f97316', color: '#fff', textDecoration: 'none' }}>
                             Get The Full Guide
                         </a>
                     </div>
                 </div>
                 
                 <div className="hero-image-wrapper">
-                    <a href="https://buy.stripe.com/test_9B6aEY4OY4UEglR2Kj5sA01" style={{ textDecoration: 'none', cursor: 'pointer', transition: 'transform 0.3s ease', display: 'inline-block' }}>
+                    <a href="https://buy.stripe.com/7sY9AUdlu86Q3z55Wv5sA1m" style={{ textDecoration: 'none', cursor: 'pointer', transition: 'transform 0.3s ease', display: 'inline-block' }}>
                         <div className="book-mockup">
                             <div className="book-cover" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '24px', paddingBottom: '24px' }}>
                                 <h2 style={{ fontSize: '1.5rem', lineHeight: '1.1', marginBottom: '12px', textAlign: 'left', color: '#fff' }}>Inside the <span className="highlight" style={{color: '#f97316'}}>Junior Hockey</span> System</h2>
@@ -71,7 +71,7 @@ const JuniorHockeyGuide = () => {
                 <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
                     <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '3rem', color: '#fff', marginBottom: '24px', lineHeight: '1.2' }}>Your Journey to the Next Level Starts Here.</h2>
                     <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '1.25rem', color: '#a1a1aa', marginBottom: '40px' }}>Join the hundreds of players who have successfully navigated the junior hockey landscape using these exact proven strategies.</p>
-                    <a href="https://buy.stripe.com/test_9B6aEY4OY4UEglR2Kj5sA01" className="btn btn-primary btn-large" style={{ fontSize: '1.25rem', padding: '18px 48px', boxShadow: '0 4px 20px rgba(249, 115, 22, 0.4)', textDecoration: 'none' }}>
+                    <a href="https://buy.stripe.com/7sY9AUdlu86Q3z55Wv5sA1m" className="btn btn-primary btn-large" style={{ fontSize: '1.25rem', padding: '18px 48px', boxShadow: '0 4px 20px rgba(249, 115, 22, 0.4)', textDecoration: 'none' }}>
                         Purchase The Full Guide Now
                     </a>
                     <p style={{ marginTop: '16px', fontSize: '0.875rem', color: '#71717a' }}>Secure payment powered by Stripe. Instant PDF Download.</p>
