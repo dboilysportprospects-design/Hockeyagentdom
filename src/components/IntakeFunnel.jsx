@@ -28,21 +28,47 @@ const IntakeFunnel = ({ selectedPlan, initialStep = 1 }) => {
     setStep(s => s - 1);
   };
 
-  const handleFinalSubmit = (e) => {
+  const handleFinalSubmit = async (e) => {
     e.preventDefault();
-    // Here you would typically save the formData to your database before redirecting
     console.log("Form Data captured:", formData);
     
-    // Redirect to Stripe Payment Link
+    // 1. Send data to a Webhook (Zapier/Make) to trigger emails if configured
+    const webhookUrl = import.meta.env.VITE_ZAPIER_WEBHOOK_URL;
+    if (webhookUrl) {
+      try {
+        const payload = {
+          planName: selectedPlan === 'video' ? 'The Video Audit' : 'The Scorecard Evaluation',
+          planPrice: selectedPlan === 'video' ? '$149' : '$49',
+          ...formData
+        };
+
+        await fetch(webhookUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload)
+        });
+        console.log("Successfully sent order details to Webhook");
+      } catch (error) {
+        console.error("Failed to send tracking data to webhook:", error);
+      }
+    }
+
+    // 2. Redirect to Stripe Payment Link
     const stripeLinks = {
-      scorecard: "https://buy.stripe.com/cNi9AUgxGcn6glR3On5sA1l",
-      video: "https://buy.stripe.com/3cIdRaepyeve5HdgB95sA1k"
+      scorecard: "https://buy.stripe.com/test_eVqfZidlu5YIglRckT5sA00", // TEST LINK
+      video: "https://buy.stripe.com/test_eVqfZidlu5YIglRckT5sA00" // TEST LINK
     };
 
-    const link = stripeLinks[selectedPlan];
+    const baseUrl = stripeLinks[selectedPlan];
+    
+    // Automatically pre-fill the customer's email on the Stripe checkout page
+    const emailParam = formData.email ? `?prefilled_email=${encodeURIComponent(formData.email)}` : '';
+    const link = `${baseUrl}${emailParam}`;
     
     // For local development simulation
-    if (link.includes('DUMMY_LINK')) {
+    if (baseUrl.includes('DUMMY_LINK')) {
       window.location.href = `/?payment=success&plan=${selectedPlan}`;
     } else {
       window.location.href = link; 

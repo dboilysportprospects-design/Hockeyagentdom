@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Successful | Junior Hockey System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #09090b;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --accent-orange: #f97316;
+            --font-heading: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        body { margin: 0; font-family: var(--font-body); background-color: var(--color-bg); color: var(--text-primary); }
+        .page-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .container { max-width: 600px; padding: 60px 40px; background: rgba(24, 24, 27, 0.8); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; margin: 0 auto; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+        .icon-check { margin-bottom: 24px; color: var(--accent-orange); }
+        .btn-primary { display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-heading); background-color: var(--accent-orange); color: #fff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-size: 1.125rem; font-weight: 700; width: 100%; box-sizing: border-box; transition: background-color 0.2s; cursor: pointer; }
+        .btn-primary:hover { background-color: #ea580c; }
+        .nav-link { display: inline-block; margin-top: 24px; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
+        .nav-link:hover { color: #fff; }
+    </style>
+</head>
+<body class="page-wrap">
+    <div class="container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <h1 style="font-size: 2.5rem; margin-bottom: 16px; font-family: var(--font-heading);">Purchase Complete!</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 32px; font-size: 1.125rem;">You now have full access to "Inside the Junior Hockey System". Welcome to the inside.</p>
+        
+        <!-- Direct File Download -->
+        <a href="/Junior_Hockey_Final.pdf" download="Inside_the_Junior_Hockey_System_Final.pdf" class="btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download Your Premium Digital Guide
+        </a>
+        <div>
+            <a href="/" class="nav-link">Return to Home</a>
+        </div>
+    </div>
+</body>
+</html>

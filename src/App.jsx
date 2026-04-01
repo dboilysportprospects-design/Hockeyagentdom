@@ -8,6 +8,8 @@ import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import IntakeFunnel from './components/IntakeFunnel';
 
+import JuniorHockeyGuide from './components/JuniorHockeyGuide';
+
 function App() {
   const [showIntake, setShowIntake] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
@@ -54,6 +56,9 @@ function App() {
       <SkaterSection />
       <GoaltenderSection />
       <Pricing onSelectPlan={handleSelectPlan} />
+      
+      <JuniorHockeyGuide />
+      
       <Contact />
       
       {showIntake && (
