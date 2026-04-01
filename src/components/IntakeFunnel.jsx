@@ -33,7 +33,7 @@ const IntakeFunnel = ({ selectedPlan, initialStep = 1 }) => {
     console.log("Form Data captured:", formData);
     
     // 1. Send data to a Webhook (Zapier/Make) to trigger emails if configured
-    const webhookUrl = import.meta.env.VITE_ZAPIER_WEBHOOK_URL;
+    const webhookUrl = "https://hooks.zapier.com/hooks/catch/27044569/unenw8q/";
     if (webhookUrl) {
       try {
         const payload = {
