@@ -58,7 +58,7 @@ const IntakeFunnel = ({ selectedPlan, initialStep = 1 }) => {
     // 2. Redirect to Stripe Payment Link
     const stripeLinks = {
       scorecard: "https://buy.stripe.com/test_eVqfZidlu5YIglRckT5sA00", // TEST LINK
-      video: "https://buy.stripe.com/test_eVqfZidlu5YIglRckT5sA00" // TEST LINK
+      video: "https://buy.stripe.com/3cIdRaepyeve5HdgB95sA1k" // LIVE LINK
     };
 
     const baseUrl = stripeLinks[selectedPlan];
